@@ -1,0 +1,251 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C4D9FF;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.top-nav{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.top-nav a:hover{
+    color: #C5BAFF;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        display: block;
+        flex-direction: column;
+    }
+    header{
+        padding-top: 15px;
+        padding-bottom: 70px;
+    }
+    .top{
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    main{
+        display: block;
+        flex-direction: column;
+    }
+    .right{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 350px;
+        height: 100%;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+    
+    .top-nav{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .top-nav a{
+        margin-right: 10px;
+    }
+
+    main .left{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    main .left-nav{
+        width: 140px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    
+    main .center{
+        width: 100% ;
+        height: 100% ;
+    }
+    hr{
+        margin-right: 50px;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left{
+    margin-top: 20px;
+    width: 20%;
+    height: 300px;
+}
+
+
+.left-nav{
+    overflow: hidden;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #C5BAFF;
+
+}
+
+.left-nav a{
+    padding-top: 5px;
+    padding-left: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: #C5BAFF;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.left-nav a:hover{ 
+    width: 100%;
+    height: 100%; 
+    color: white;
+    background-color: rgb(0, 0, 255, 0.1);
+    border: transparent;
+
+}
+
+.left img{
+    margin-right: 10px;
+}
+
+.center{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+.right{
+    width: 25%;
+    height: 300px;
+}
+
+.main-center{
+    border: 1px solid #C5BAFF;
+    box-shadow: 0 0 15px rgb(197, 186, 255, 0.6);
+    border-radius: 10px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-center p{
+    display: flex;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profil-picture{
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: 30px;
+
+}
+
+.profil{
+    display: flex;
+}
+
+.profil-name{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.profil-name :nth-child(1){
+    font-weight: 700;
+}
+
+.profil-name :nth-child(3){
+    color: gray;
+    font-size: 12px;
+}
+
+.profil-pic{
+    border: 1px solid #C5BAFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #C4D9FF 40%, white 50%);
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.waves{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-right{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #C5BAFF;
+    box-shadow: 0 0 15px rgb(197, 186, 255, 0.6);
+
+}
+
+.right p{
+    display: flex;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.suggestion{
+    color: #C4D9FF;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+hr{
+    border: 1px solid #C4D9FF;
+    width: 90%;
+    margin-left: 40px;
+}
